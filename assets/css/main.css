@@ -3150,7 +3150,8 @@ h2 {
 #concepto p {
   margin-bottom: 1.8rem;
 }
-
-.ficha-proyecto ul li {
-  padding: 0.4rem 0;
+/* Limpieza visual proyecto */
+#main p,
+#main ul li {
+  border: none;
 }
