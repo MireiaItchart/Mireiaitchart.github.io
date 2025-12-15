@@ -3143,3 +3143,7 @@ input, select, textarea {
 .image.fit img {
   border-radius: 4px;
 }
+h2 {
+  margin-bottom: 2.5rem;
+  letter-spacing: 0.05em;
+}
