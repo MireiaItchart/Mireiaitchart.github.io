@@ -3140,3 +3140,6 @@ input, select, textarea {
 .row {
   margin-bottom: 4em;
 }
+.image.fit img {
+  border-radius: 4px;
+}
