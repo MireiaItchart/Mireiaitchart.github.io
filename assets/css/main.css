@@ -3136,3 +3136,7 @@ input, select, textarea {
 					}
 
 	}
+/* Galería proyectos – más aire entre filas */
+.row {
+  margin-bottom: 4em;
+}
