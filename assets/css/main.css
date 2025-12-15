@@ -4158,3 +4158,16 @@ input, select, textarea {
 .spotlight .image img {
   border-radius: 0;
 }
+/* Quitar recorte ovalado en spotlight */
+.spotlight .image {
+  border-radius: 0 !important;
+  overflow: visible !important;
+}
+
+.spotlight .image:before {
+  border-radius: 0 !important;
+}
+
+.spotlight .image img {
+  border-radius: 0 !important;
+}
