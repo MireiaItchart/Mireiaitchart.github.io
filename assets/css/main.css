@@ -3138,7 +3138,7 @@ input, select, textarea {
 	}
 /* Galería proyectos – más aire entre filas */
 .row {
-  margin-bottom: 4em;
+  margin-bottom: 3em;
 }
 .image.fit img {
   border-radius: 4px;
