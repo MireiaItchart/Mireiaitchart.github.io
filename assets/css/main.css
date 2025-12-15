@@ -3144,11 +3144,11 @@ input, select, textarea {
   border-radius: 4px;
 }
 h2 {
-  margin-bottom: 2.5rem;
+  margin-bottom: 3.5rem;
   letter-spacing: 0.05em;
 }
 #concepto p {
-  margin-bottom: 1.8rem;
+  margin-bottom: 2.5rem;
 }
 /* Limpieza visual proyecto */
 #main p,
@@ -3157,9 +3157,9 @@ h2 {
 }
 .ficha-proyecto ul {
   list-style: disc;
-  padding-left: 1.2rem;
+  padding-left: 2.0rem;
 }
 
 .ficha-proyecto ul li {
-  margin-bottom: 0.6rem;
+  margin-bottom: 2.5rem;
 }
