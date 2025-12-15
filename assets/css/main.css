@@ -3147,6 +3147,10 @@ h2 {
   margin-bottom: 2.5rem;
   letter-spacing: 0.05em;
 }
-ul li {
-  border: none !important;
+#concepto p {
+  margin-bottom: 1.8rem;
+}
+
+.ficha-proyecto ul li {
+  padding: 0.4rem 0;
 }
