@@ -3174,5 +3174,5 @@ h2 + .row {
 /* Más aire después de los títulos de bloque dentro de la ficha */
 .ficha-proyecto ul li strong {
   display: inline-block;
-  margin-bottom: 1.2rem;
+  margin-bottom: 0.8rem;
 }
