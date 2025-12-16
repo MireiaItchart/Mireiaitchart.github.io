@@ -3192,3 +3192,14 @@ h2 + .row {
 .ficha-proyecto ul li.bloque ul li {
   margin-bottom: 0.3rem;
 }
+/* Mantén la sangría del UL principal */
+.ficha-proyecto > ul {
+  padding-left: 1.5rem;
+}
+
+/* Pero quita la sangría de los UL anidados (sublista) */
+.ficha-proyecto ul ul {
+  padding-left: 0;
+  margin-left: 0;
+  list-style: none;
+}
