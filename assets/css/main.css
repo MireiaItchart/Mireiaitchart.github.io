@@ -3149,6 +3149,13 @@ input, select, textarea {
 }
 h2 + .row { margin-top: 3rem; }
 
+/* Aire para títulos de secciones (Concepto / Ficha / Galería) */ 
+#main h3 { 
+	margin-top: 4rem; 
+	margin-bottom: 2.5rem; 
+	letter-spacing: 0.05em;
+																		
+
 /* ===== FICHA DEL PROYECTO (LIMPIO Y ALINEADO) ===== */
 
 /* UL principal: conserva la sangría */
