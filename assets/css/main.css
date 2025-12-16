@@ -3162,7 +3162,7 @@ h2 + .row {
 /* Subitems más compactos */
 .ficha-proyecto ul li {
   margin-bottom: 0.6rem;
-  line-height: 1.4;
+  line-height: 0.6;
 }
 /* Aire para títulos de secciones (Concepto / Ficha / Galería) */
 #main h3 {
