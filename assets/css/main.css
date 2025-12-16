@@ -3199,7 +3199,10 @@ h2 + .row {
 
 /* Pero quita la sangría de los UL anidados (sublista) */
 .ficha-proyecto ul ul {
-  padding-left: 0;
-  margin-left: 0;
+  padding-left: 0 !important;
+  margin-left: 0 !important;
   list-style: none;
+}
+.ficha-proyecto ul ul li {
+  margin-bottom: 0.3rem;
 }
