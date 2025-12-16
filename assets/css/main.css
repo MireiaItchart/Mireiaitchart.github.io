@@ -3160,10 +3160,9 @@ h2 + .row {
   line-height: 1.4;
 }
 /* Subitems más compactos */
-.ficha-proyecto ul li ul li,
-.ficha-proyecto ul li:not(:has(strong)) {
-  margin-bottom: 0.3rem;
-  line-height: 1.35;
+.ficha-proyecto ul li {
+  margin-bottom: 0.6rem;
+  line-height: 1.4;
 }
 /* Aire para títulos de secciones (Concepto / Ficha / Galería) */
 #main h3 {
@@ -3175,4 +3174,13 @@ h2 + .row {
 .ficha-proyecto ul li strong {
   display: inline-block;
   margin-bottom: 0.8rem;
+}
+/* Título "Trabajos realizados" */
+.ficha-proyecto ul li strong {
+  display: block;
+  margin-bottom: 0.6rem;
+}
+/* Líneas internas de trabajos realizados */
+.ficha-proyecto ul li br + * {
+  line-height: 1.25;
 }
