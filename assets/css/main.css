@@ -3148,61 +3148,40 @@ input, select, textarea {
   margin-bottom: 3rem;
 }
 
-h2 + .row {
-  margin-top: 3rem;
-}
-/* Ficha del proyecto: sangría de la lista */
-.ficha-proyecto ul {
+/* ===== FICHA DEL PROYECTO (LIMPIO Y ALINEADO) ===== */
+
+/* UL principal: conserva la sangría */
+.ficha-proyecto > ul {
   padding-left: 1.5rem;
+  margin: 0;
 }
 
-/* Ítems de la ficha (espaciado general) */
-.ficha-proyecto ul li {
+/* Estilo general de items */
+.ficha-proyecto li {
   margin-bottom: 0.6rem;
-  line-height: 1.2; /* si lo quieres un pelín menos compacto: 1.25 */
+  line-height: 1.2;
 }
 
-/* Título dentro de un ítem (ej: "Trabajos realizados:") */
-/* Por defecto: título y valor en la misma línea */
-.ficha-proyecto ul li strong {
+/* Título + valor en la misma línea */
+.ficha-proyecto li strong {
   display: inline;
-  margin-bottom: 0;
   margin-right: 0.35rem;
 }
 
-/* Excepción: "Trabajos realizados" en bloque */
-.ficha-proyecto ul li.bloque > strong {
+/* "Trabajos realizados" en bloque */
+.ficha-proyecto li.bloque > strong {
   display: block;
   margin-bottom: 0.5rem;
 }
 
-/* Aire para títulos de secciones (Concepto / Ficha / Galería) */
-#main h3 {
-  margin-top: 4rem;
-  margin-bottom: 2.5rem;
-  letter-spacing: 0.05em;
-}
-/* Sublista alineada con el título "Trabajos realizados" */
-.ficha-proyecto ul li.bloque ul {
+/* Sublista alineada con el título */
+.ficha-proyecto li.bloque > ul {
   list-style: none;
-  padding-left: 0;     /* elimina el desplazamiento extra */
-  margin-left: 0;      /* asegura alineación exacta */
-  margin-top: 0.0rem;
-}
-.ficha-proyecto ul li.bloque ul li {
-  margin-bottom: 0.3rem;
-}
-/* Mantén la sangría del UL principal */
-.ficha-proyecto > ul {
-  padding-left: 1.5rem;
+  padding: 0;
+  margin: 0;
 }
 
-/* Pero quita la sangría de los UL anidados (sublista) */
-.ficha-proyecto ul ul {
-  padding-left: 0 !important;
-  margin-left: 0 !important;
-  list-style: none;
-}
-.ficha-proyecto ul ul li {
+/* Separación fina entre líneas de la sublista */
+.ficha-proyecto li.bloque > ul > li {
   margin-bottom: 0.3rem;
 }
