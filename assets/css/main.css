@@ -3185,8 +3185,9 @@ h2 + .row { margin-top: 3rem; }
 /* Sublista alineada con el título */
 .ficha-proyecto li.bloque > ul {
   list-style: none;
-  padding: 0;
-  margin: 0;
+  padding-left: 0 !important; /* elimina el desplazamiento extra */
+  margin-left: 0 !important; /* asegura alineación exacta */
+  margin-top: 0.0rem
 }
 
 /* Separación fina entre líneas de la sublista */
