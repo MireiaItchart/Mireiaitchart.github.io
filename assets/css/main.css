@@ -3163,7 +3163,15 @@ h2 + .row {
 }
 
 /* Título dentro de un ítem (ej: "Trabajos realizados:") */
+/* Por defecto: título y valor en la misma línea */
 .ficha-proyecto ul li strong {
+  display: inline;
+  margin-bottom: 0;
+  margin-right: 0.35rem;
+}
+
+/* Excepción: "Trabajos realizados" en bloque */
+.ficha-proyecto ul li.bloque > strong {
   display: block;
   margin-bottom: 0.5rem;
 }
