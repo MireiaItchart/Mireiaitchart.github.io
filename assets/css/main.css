@@ -3156,3 +3156,7 @@ h2 {
 h2 + .row {
   margin-top: 3rem;
 }
+
+.ficha-proyecto ul li {
+  margin-bottom: 1rem;
+}
