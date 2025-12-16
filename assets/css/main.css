@@ -3182,3 +3182,9 @@ h2 + .row {
   margin-bottom: 2.5rem;
   letter-spacing: 0.05em;
 }
+/* Sublista de "Trabajos realizados": sin viñetas pero con sangría */
+.ficha-proyecto ul li.bloque ul {
+  list-style: none;
+  padding-left: 1.2rem; /* conserva el desplazamiento */
+  margin-top: 0.4rem;
+}
