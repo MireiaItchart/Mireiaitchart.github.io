@@ -3184,7 +3184,4 @@ h2 + .row {
 .ficha-proyecto ul li br + * {
   line-height: 0.6;
 }
-.ficha-proyecto ul li p {
-  margin: 0.25rem 0;
-  line-height: 1.3;
-}
+
