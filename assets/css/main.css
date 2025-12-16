@@ -3187,8 +3187,8 @@ h2 + .row {
   list-style: none;
   padding-left: 0;     /* elimina el desplazamiento extra */
   margin-left: 0;      /* asegura alineación exacta */
-  margin-top: 0.4rem;
+  margin-top: 0.0rem;
 }
 .ficha-proyecto ul li.bloque ul li {
-  margin-bottom: 0.0rem;
+  margin-bottom: 0.3rem;
 }
