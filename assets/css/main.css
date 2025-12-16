@@ -3151,37 +3151,26 @@ input, select, textarea {
 h2 + .row {
   margin-top: 3rem;
 }
+/* Ficha del proyecto: sangría de la lista */
 .ficha-proyecto ul {
   padding-left: 1.5rem;
 }
 
-.ficha-proyecto ul li {
-  margin-bottom: 0.75rem;
-  line-height: 1.25;
-}
-/* Subitems más compactos */
+/* Ítems de la ficha (espaciado general) */
 .ficha-proyecto ul li {
   margin-bottom: 0.6rem;
-  line-height: 1.25;
+  line-height: 1.2; /* si lo quieres un pelín menos compacto: 1.25 */
 }
+
+/* Título dentro de un ítem (ej: "Trabajos realizados:") */
+.ficha-proyecto ul li strong {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
 /* Aire para títulos de secciones (Concepto / Ficha / Galería) */
 #main h3 {
   margin-top: 4rem;
   margin-bottom: 2.5rem;
   letter-spacing: 0.05em;
 }
-/* Más aire después de los títulos de bloque dentro de la ficha */
-.ficha-proyecto ul li strong {
-  display: inline-block;
-  margin-bottom: 0.8rem;
-}
-/* Título "Trabajos realizados" */
-.ficha-proyecto ul li strong {
-  display: block;
-  margin-bottom: 0.6rem;
-}
-/* Líneas internas de trabajos realizados */
-.ficha-proyecto ul li br + * {
-  line-height: 0.6;
-}
-
