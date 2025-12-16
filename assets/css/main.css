@@ -3156,41 +3156,44 @@ h2 + .row { margin-top: 3rem; }
 	letter-spacing: 0.05em;
 																		
 
-/* ===== FICHA DEL PROYECTO (LIMPIO Y ALINEADO) ===== */
+/* ===== FICHA DEL PROYECTO (OVERRIDE DEFINITIVO) ===== */
 
-/* UL principal: conserva la sangría */
-.ficha-proyecto > ul {
+/* UL principal: conserva sangría */
+.ficha-proyecto > ul{
   padding-left: 1.5rem;
   margin: 0;
 }
 
-/* Estilo general de items */
-.ficha-proyecto li {
+/* Items generales */
+.ficha-proyecto li{
   margin-bottom: 0.6rem;
   line-height: 1.2;
 }
 
 /* Título + valor en la misma línea */
-.ficha-proyecto li strong {
+.ficha-proyecto li strong{
   display: inline;
   margin-right: 0.35rem;
 }
 
 /* "Trabajos realizados" en bloque */
-.ficha-proyecto li.bloque > strong {
+.ficha-proyecto li.bloque > strong{
   display: block;
   margin-bottom: 0.5rem;
 }
 
-/* Sublista alineada con el título */
-.ficha-proyecto li.bloque > ul {
-  list-style: none;
-  padding-left: 0 !important; /* elimina el desplazamiento extra */
-  margin-left: 0 !important; /* asegura alineación exacta */
-  margin-top: 0.0rem
+/* SUBLISTA: sin puntos y SIN desplazamiento */
+.ficha-proyecto li.bloque > ul{
+  list-style: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  padding-inline-start: 0 !important; /* clave en muchos themes */
 }
 
-/* Separación fina entre líneas de la sublista */
-.ficha-proyecto li.bloque > ul > li {
+/* A veces la viñeta la aplica el theme al LI, así que también lo anulamos */
+.ficha-proyecto li.bloque > ul > li{
+  list-style: none !important;
   margin-bottom: 0.3rem;
+  padding-left: 0 !important;
+  text-indent: 0 !important;
 }
