@@ -3147,6 +3147,7 @@ input, select, textarea {
 #concepto p {
   margin-bottom: 3rem;
 }
+h2 + .row { margin-top: 3rem; }
 
 /* ===== FICHA DEL PROYECTO (LIMPIO Y ALINEADO) ===== */
 
