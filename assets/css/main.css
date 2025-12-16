@@ -3156,7 +3156,7 @@ h2 + .row { margin-top: 3rem; }
 	letter-spacing: 0.05em;
 																		
 
-/* ===== FICHA DEL PROYECTO (OVERRIDE DEFINITIVO) ===== */
+/* ===== FICHA DEL PROYECTO ===== */
 
 /* UL principal: conserva sangría */
 .ficha-proyecto > ul{
@@ -3182,18 +3182,29 @@ h2 + .row { margin-top: 3rem; }
   margin-bottom: 0.5rem;
 }
 
-/* SUBLISTA: sin puntos y SIN desplazamiento */
+/* ===== SUBLISTA "TRABAJOS REALIZADOS" (OVERRIDE) ===== */
+
+/* Elimina viñetas del navegador y del theme */
 .ficha-proyecto li.bloque > ul{
   list-style: none !important;
   padding: 0 !important;
   margin: 0 !important;
-  padding-inline-start: 0 !important; /* clave en muchos themes */
+  padding-inline-start: 0 !important;
 }
 
-/* A veces la viñeta la aplica el theme al LI, así que también lo anulamos */
+/* Por si el theme pinta la viñeta con pseudo-elementos */
+.ficha-proyecto li.bloque > ul > li::marker{
+  content: none;
+}
+.ficha-proyecto li.bloque > ul > li::before{
+  content: none !important;
+}
+
+/* Alineación + espaciado fino de los items */
 .ficha-proyecto li.bloque > ul > li{
   list-style: none !important;
-  margin-bottom: 0.3rem;
   padding-left: 0 !important;
+  margin-left: 0 !important;
   text-indent: 0 !important;
+  margin-bottom: 0.3rem;
 }
