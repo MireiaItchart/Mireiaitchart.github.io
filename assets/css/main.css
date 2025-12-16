@@ -3182,7 +3182,7 @@ h2 + .row {
 }
 /* Líneas internas de trabajos realizados */
 .ficha-proyecto ul li br + * {
-  line-height: 1.25;
+  line-height: 0.6;
 }
 .ficha-proyecto ul li p {
   margin: 0.25rem 0;
