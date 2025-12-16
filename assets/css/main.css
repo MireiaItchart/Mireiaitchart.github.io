@@ -3143,11 +3143,6 @@ input, select, textarea {
 .image.fit img {
   border-radius: 4px;
 }
-h2 {
-  margin-top: 4rem;
-  margin-bottom: 2.5rem;
-  letter-spacing: 0.05em;
-}
 
 #concepto p {
   margin-bottom: 3rem;
@@ -3163,4 +3158,10 @@ h2 + .row {
 .ficha-proyecto ul li {
   margin-bottom: 0.75rem;
   line-height: 1.4;
+}
+/* Aire para títulos de secciones (Concepto / Ficha / Galería) */
+#main h3 {
+  margin-top: 4rem;
+  margin-bottom: 2.5rem;
+  letter-spacing: 0.05em;
 }
