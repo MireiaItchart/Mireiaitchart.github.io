@@ -3144,11 +3144,12 @@ input, select, textarea {
   border-radius: 4px;
 }
 h2 {
-  margin-bottom: 3.5rem;
+  margin-top: 4rem;      /* aire antes del título */
+  margin-bottom: 2.5rem; /* aire con el texto */
   letter-spacing: 0.05em;
 }
 #concepto p {
-  margin-bottom: 2.5rem;
+  margin-bottom: 3rem;
 }
 /* Limpieza visual proyecto */
 #main p,
@@ -3161,5 +3162,8 @@ h2 {
 }
 
 .ficha-proyecto ul li {
-  margin-bottom: 2.5rem;
+  margin-bottom: 3rem;
+}
+.ficha-proyecto h2 {
+  margin-bottom: 3rem;
 }
