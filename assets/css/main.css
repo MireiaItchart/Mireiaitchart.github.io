@@ -3159,9 +3159,20 @@ h2 + .row {
   margin-bottom: 0.75rem;
   line-height: 1.4;
 }
+/* Subitems más compactos */
+.ficha-proyecto ul li ul li,
+.ficha-proyecto ul li:not(:has(strong)) {
+  margin-bottom: 0.3rem;
+  line-height: 1.35;
+}
 /* Aire para títulos de secciones (Concepto / Ficha / Galería) */
 #main h3 {
   margin-top: 4rem;
   margin-bottom: 2.5rem;
   letter-spacing: 0.05em;
+}
+/* Más aire después de los títulos de bloque dentro de la ficha */
+.ficha-proyecto ul li strong {
+  display: inline-block;
+  margin-bottom: 1.2rem;
 }
