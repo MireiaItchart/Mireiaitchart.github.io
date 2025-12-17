@@ -3198,3 +3198,8 @@ h2 + .row { margin-top: 3rem; }
 .ficha-proyecto li.bloque > ul > li::before{
   content: none !important;
 }
+/* Fuerza quitar viñetas en sublistas de ficha de proyecto */
+.ficha-proyecto ul ul{
+  list-style: none !important;
+  padding-left: 0 !important;
+}
