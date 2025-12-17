@@ -3158,19 +3158,16 @@ h2 + .row { margin-top: 3rem; }
 
 /* ===== FICHA DEL PROYECTO ===== */
 
-/* UL principal: conserva sangría */
 .ficha-proyecto > ul{
   padding-left: 1.5rem;
   margin: 0;
 }
 
-/* Items generales */
 .ficha-proyecto li{
   margin-bottom: 0.6rem;
   line-height: 1.2;
 }
 
-/* Título + valor en la misma línea */
 .ficha-proyecto li strong{
   display: inline;
   margin-right: 0.35rem;
@@ -3182,47 +3179,21 @@ h2 + .row { margin-top: 3rem; }
   margin-bottom: 0.5rem;
 }
 
-/* ===== SUBLISTA "TRABAJOS REALIZADOS" (OVERRIDE) ===== */
-
-/* Elimina viñetas del navegador y del theme */
+/* ===== SUBLISTA "TRABAJOS REALIZADOS" ===== */
 .ficha-proyecto li.bloque > ul{
   list-style: none !important;
-  padding: 0 !important;
   margin: 0 !important;
+  padding: 0 !important;
   padding-inline-start: 0 !important;
 }
 
-/* Por si el theme pinta la viñeta con pseudo-elementos */
-.ficha-proyecto li.bloque > ul > li::marker{
-  content: none;
-}
-.ficha-proyecto li.bloque > ul > li::before{
-  content: none !important;
-}
-
-/* Alineación + espaciado fino de los items */
-.ficha-proyecto li.bloque > ul > li{
-  list-style: none !important;
-  padding-left: 0 !important;
-  margin-left: 0 !important;
-  text-indent: 0 !important;
-  margin-bottom: 0.3rem;
-}
-/* Quitar viñetas y sangría de la sublista "Trabajos realizados" */
-.ficha-proyecto li.bloque > ul{
-  list-style: none !important;
-  margin: 0 !important;
-  padding: 0 !important;
-}
-
-/* Alinear los items con el título (sin indentación extra) */
 .ficha-proyecto li.bloque > ul > li{
   margin: 0 0 0.3rem 0 !important;
   padding: 0 !important;
   text-indent: 0 !important;
 }
 
-/* Por si la plantilla dibuja “viñetas” con pseudo-elementos */
+/* Por si la plantilla dibuja viñetas */
 .ficha-proyecto li.bloque > ul > li::marker,
 .ficha-proyecto li.bloque > ul > li::before{
   content: none !important;
