@@ -40,4 +40,7 @@ header.major h3{
   padding-left: 0;
   margin-left: 0;
 }
-
+.col-ficha .ficha-proyecto > ul{
+  padding-left: 0;
+  margin-left: 0;
+}
