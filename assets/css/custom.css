@@ -49,3 +49,7 @@ header.major h3{
 .ficha-proyecto li.bloque > ul{
   margin-top: 0;
 }
+/* Asegurar que la sublista arranca pegada */
+.ficha-proyecto li.bloque > ul{
+  margin-top: 0;
+}
