@@ -43,3 +43,16 @@ header.major h3{
   margin: 0 !important;
   list-style-position: inside;
 }
+
+
+
+/* Menos espacio entre secciones */
+#main .row{
+  margin-bottom: 1.5em;   /* antes 3em */
+}
+
+/* Menos aire en títulos de sección */
+#main h3{
+  margin-top: 2em;        /* antes 4em */
+  margin-bottom: 1.5rem;  /* antes 2.5rem */
+}
