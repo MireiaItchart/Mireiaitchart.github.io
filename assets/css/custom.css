@@ -40,3 +40,6 @@ header.major h3{
   padding-left: 0;
   margin-left: 0;
 }
+.ficha-proyecto ul{
+  padding-left: 0.4rem; /* prueba 0.2 / 0.3 / 0.4 */
+}
