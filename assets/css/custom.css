@@ -31,20 +31,15 @@ header.major h2,
 header.major h3{
   background: none !important;
 }
-/* Alinear la ficha del proyecto con la galería */
-.ficha-proyecto ul{
- padding-left: 1.4rem; /* prueba 0.2 / 0.3 / 0.4 */
+}
+/* Mantener 2 columnas 50/50 sin hacks */
+.fila-concepto-ficha > .col-6{
+  padding-right: 0; /* no obligatorio, pero evita “parches” anteriores */
 }
 
-.ficha-proyecto li{
-  padding-left: 0;
-  margin-left: 0;
-}
-.col-ficha .ficha-proyecto > ul{
-  padding-left: 0;
-  margin-left: 0;
-}
-/* Dar más aire entre Concepto y Ficha SIN afectar a la galería */
-.fila-concepto-ficha > .col-6:first-child{
-  padding-right: 6rem;
+/* Alinear los puntos de la ficha con el borde de la columna */
+.ficha-proyecto > ul{
+  padding-left: 0 !important;
+  margin: 0 !important;
+  list-style-position: inside;
 }
