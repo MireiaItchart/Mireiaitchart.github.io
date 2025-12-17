@@ -1,1 +1,6 @@
-
+/* Quitar líneas decorativas de Helios */
+header.major::before,
+header.major::after{
+  content: none !important;
+  display: none !important;
+}
