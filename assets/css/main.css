@@ -3198,10 +3198,13 @@ h2 + .row { margin-top: 3rem; }
   list-style: none !important;
   padding-left: 0 !important;
 }
-/* Quitar líneas decorativas de los títulos */
+/* Quitar líneas decorativas de Helios en headers "major" */
+header.major::before,
+header.major::after,
 header.major h2::before,
 header.major h2::after,
 header.major h3::before,
 header.major h3::after{
+  content: none !important;
   display: none !important;
 }
