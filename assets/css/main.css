@@ -3151,8 +3151,8 @@ h2 + .row { margin-top: 3rem; }
 
 /* Aire para títulos de secciones (Concepto / Ficha / Galería) */ 
 #main h3 { 
-	margin-top: 4rem; 
-	margin-bottom: 2.5rem; 
+	margin-top: 2rem; 
+	margin-bottom: 1.5rem; 
 	letter-spacing: 0.05em;
 																		
 
