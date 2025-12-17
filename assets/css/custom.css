@@ -46,5 +46,5 @@ header.major h3{
 }
 /* Dar más aire entre Concepto y Ficha SIN afectar a la galería */
 .fila-concepto-ficha > .col-6:first-child{
-  padding-right: 4rem;
+  padding-right: 6rem;
 }
