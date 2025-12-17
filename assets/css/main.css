@@ -3138,7 +3138,7 @@ input, select, textarea {
 	}
 /* Galería proyectos – más aire entre filas */
 .row {
-  margin-bottom: 3em;
+  margin-bottom: 1em;
 }
 .image.fit img {
   border-radius: 4px;
@@ -3149,10 +3149,10 @@ input, select, textarea {
 }
 h2 + .row { margin-top: 3rem; }
 
-/* Aire para títulos de secciones (Concepto / Ficha / Galería) */ 
+/* Aire entre títulos y contenido (Concepto / Ficha / Galería) */ 
 #main h3 { 
 	margin-top: 2rem; 
-	margin-bottom: 1.5rem; 
+	margin-bottom: 2rem; 
 	letter-spacing: 0.05em;
 																		
 
