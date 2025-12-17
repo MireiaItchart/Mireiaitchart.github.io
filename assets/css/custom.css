@@ -45,11 +45,10 @@ header.major h3{
 }
 
 
-/* Pegar la sublista justo debajo de "Trabajos realizados" */
+/* Alinear el texto de la sublista con el texto del título */
 .ficha-proyecto li.bloque > ul{
   margin-top: 0;
-}
-/* Asegurar que la sublista arranca pegada */
-.ficha-proyecto li.bloque > ul{
-  margin-top: 0;
+  padding-left: 0;
+  margin-left: 1.4rem; /* clave: mueve el texto a la derecha */
+  list-style: none;
 }
