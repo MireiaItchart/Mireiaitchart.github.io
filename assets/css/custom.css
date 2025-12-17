@@ -31,3 +31,12 @@ header.major h2,
 header.major h3{
   background: none !important;
 }
+/* Alinear la ficha del proyecto con la galería */
+.ficha-proyecto ul{
+  padding-left: 0;
+}
+
+.ficha-proyecto li{
+  padding-left: 0;
+  margin-left: 0;
+}
