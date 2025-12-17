@@ -45,3 +45,7 @@ header.major h3{
 }
 
 
+/* Pegar la sublista justo debajo de "Trabajos realizados" */
+.ficha-proyecto li.bloque > ul{
+  margin-top: 0;
+}
