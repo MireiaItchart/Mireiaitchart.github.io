@@ -44,3 +44,7 @@ header.major h3{
   padding-left: 0;
   margin-left: 0;
 }
+/* Desplazar la columna de Ficha del proyecto hacia la derecha */
+.col-ficha{
+  margin-left: 2rem;
+}
