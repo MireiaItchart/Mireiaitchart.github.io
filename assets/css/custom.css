@@ -4,3 +4,36 @@ header.major::after{
   content: none !important;
   display: none !important;
 }
+/* Quitar líneas decorativas (Helios) - versión agresiva */
+.major::before,
+.major::after,
+.major h1::before,
+.major h1::after,
+.major h2::before,
+.major h2::after,
+.major h3::before,
+.major h3::after,
+header.major::before,
+header.major::after,
+header.major h1::before,
+header.major h1::after,
+header.major h2::before,
+header.major h2::after,
+header.major h3::before,
+header.major h3::after{
+  content: none !important;
+  display: none !important;
+  border: 0 !important;
+  background: none !important;
+  box-shadow: none !important;
+}
+
+/* Por si las líneas vienen como "fondo" del título */
+.major h1,
+.major h2,
+.major h3,
+header.major h1,
+header.major h2,
+header.major h3{
+  background: none !important;
+}
