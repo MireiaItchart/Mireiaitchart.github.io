@@ -3208,3 +3208,22 @@ h2 + .row { margin-top: 3rem; }
   text-indent: 0 !important;
   margin-bottom: 0.3rem;
 }
+/* Quitar viñetas y sangría de la sublista "Trabajos realizados" */
+.ficha-proyecto li.bloque > ul{
+  list-style: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+/* Alinear los items con el título (sin indentación extra) */
+.ficha-proyecto li.bloque > ul > li{
+  margin: 0 0 0.3rem 0 !important;
+  padding: 0 !important;
+  text-indent: 0 !important;
+}
+
+/* Por si la plantilla dibuja “viñetas” con pseudo-elementos */
+.ficha-proyecto li.bloque > ul > li::marker,
+.ficha-proyecto li.bloque > ul > li::before{
+  content: none !important;
+}
