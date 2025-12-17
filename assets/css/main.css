@@ -3198,3 +3198,10 @@ h2 + .row { margin-top: 3rem; }
   list-style: none !important;
   padding-left: 0 !important;
 }
+/* Quitar líneas decorativas de los títulos */
+header.major h2::before,
+header.major h2::after,
+header.major h3::before,
+header.major h3::after{
+  display: none !important;
+}
