@@ -3286,6 +3286,6 @@ body.homepage #header .inner {
 body.homepage #header h1,
 body.homepage #header header > p,
 body.homepage #header a {
-  color: #24313c !important; /* azul oscuro elegante */
+  color: #1c1f23 !important; /* azul oscuro elegante */
   text-shadow: 0 1px 6px rgba(255,255,255,0.6);
 }
