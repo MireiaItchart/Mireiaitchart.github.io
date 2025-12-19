@@ -3176,10 +3176,15 @@ h2 + .row { margin-top: 3rem; }
   margin-right: 0.35rem;
 }
 
-/* "Trabajos realizados" en bloque */
+/* "Trabajos realizados" SIN salirse del punto */
 .ficha-proyecto li.bloque > strong{
-  display: block;
-  margin-bottom: 0.5rem;
+  display: inline;        /* antes: block */
+  margin-bottom: 0;       /* antes: 0.5rem */
+}
+
+/* Separación entre el título y la sublista */
+.ficha-proyecto li.bloque > ul{
+  margin-top: 0.5rem;
 }
 
 
