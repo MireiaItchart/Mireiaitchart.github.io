@@ -3222,6 +3222,8 @@ header.major h3::after{
   margin: 2em auto;
   background: rgba(255, 255, 255, 0.35);
 }
+
+
 #logo img {
   height: 240px;   /* antes 180px */
   width: auto;
@@ -3239,10 +3241,19 @@ header.major h3::after{
 #header footer {
   margin-top: 3em;
 }
+
+
 /* Botón Start más grande */
 #header .button.circled {
   width: 6.5em;
   height: 6.5em;
   line-height: 6.5em;
   font-size: 1.1em;
+}
+@media screen and (max-width: 736px) {
+  #header .button.circled {
+    width: 5.5em;
+    height: 5.5em;
+    line-height: 5.5em;
+  }
 }
