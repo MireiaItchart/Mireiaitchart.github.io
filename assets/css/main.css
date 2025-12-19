@@ -3308,3 +3308,10 @@ body.homepage #header .button.circled span,
 body.homepage #header .button.circled {
   text-shadow: none;
 }
+body.homepage #header .button.circled {
+  transition: all 0.35s ease;
+}
+
+body.homepage #header .button.circled:hover {
+  transform: translateY(-2px);
+}
