@@ -3334,3 +3334,8 @@ a.button {
   background: #1f2328 !important;   /* negro frío */
   color: #ffffff !important;
 }
+.button {
+  letter-spacing: 0.04em;  /* aire entre letras */
+  font-weight: 400;        /* un poco más elegante */
+  border-radius: 0.5em;    /* mantiene el estilo Helios */
+}
