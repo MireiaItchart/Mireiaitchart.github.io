@@ -3167,13 +3167,17 @@ h2 + .row { margin-top: 3rem; }
 }
 
 .ficha-proyecto li{
-  margin-bottom: 0.6rem;
-  line-height: 1.2;
+  margin-bottom: 1.2rem;   /* más aire vertical */
+  line-height: 1.6;        /* lectura más elegante */
 }
 
 .ficha-proyecto li strong{
   display: inline;
   margin-right: 0.35rem;
+}
+
+.ficha-proyecto li.bloque {
+  margin-top: 1.5rem;
 }
 
 /* "Trabajos realizados" SIN salirse del punto */
@@ -3184,7 +3188,7 @@ h2 + .row { margin-top: 3rem; }
 
 /* Separación entre el título y la sublista */
 .ficha-proyecto li.bloque > ul{
-  margin-top: 0.5rem;
+  margin-top: 0.8rem;
 }
 
 
