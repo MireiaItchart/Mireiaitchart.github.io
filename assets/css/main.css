@@ -3212,6 +3212,12 @@ header.major h3::after{
   display: none !important;
 }
 #logo img {
-  height: 110px;
+  height: 180px;
   width: auto;
+}
+
+@media screen and (max-width: 736px) {
+  #logo img {
+    height: 120px;
+  }
 }
