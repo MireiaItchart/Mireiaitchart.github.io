@@ -3157,7 +3157,7 @@ h2 + .row { margin-top: 3rem; }
 	margin-top: 2rem; 
 	margin-bottom: 2rem; 
 	letter-spacing: 0.05em;
-																		
+}																		
 
 /* ===== FICHA DEL PROYECTO ===== */
 
@@ -3182,8 +3182,8 @@ h2 + .row { margin-top: 3rem; }
   margin-bottom: 0.5rem;
 }
 
+
 /* ===== SUBLISTA "TRABAJOS REALIZADOS" ===== */
-}
 
 .ficha-proyecto li.bloque > ul > li{
   margin: 0 0 0.3rem 0 !important;
