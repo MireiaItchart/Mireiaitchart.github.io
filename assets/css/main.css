@@ -3327,3 +3327,10 @@ body.homepage #header .button.circled {
 body.homepage #header .button.circled:hover {
   transform: translateY(-2px);
 }
+/* Botón "Ver proyecto" – estilo negro frío */
+.button,
+input[type="submit"].button,
+a.button {
+  background: #1f2328 !important;   /* negro frío */
+  color: #ffffff !important;
+}
