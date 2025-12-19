@@ -3211,3 +3211,7 @@ header.major h3::after{
   content: none !important;
   display: none !important;
 }
+#logo img {
+  height: 110px;
+  width: auto;
+}
