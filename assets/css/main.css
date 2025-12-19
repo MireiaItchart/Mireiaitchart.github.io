@@ -3211,6 +3211,17 @@ header.major h3::after{
   content: none !important;
   display: none !important;
 }
+/* Líneas decorativas SOLO en el hero (inicio) */
+.homepage #header header::before,
+.homepage #header header::after {
+  content: '';
+  display: block;
+  width: 100%;
+  max-width: 28em;
+  height: 1px;
+  margin: 2em auto;
+  background: rgba(255, 255, 255, 0.35);
+}
 #logo img {
   height: 240px;   /* antes 180px */
   width: auto;
