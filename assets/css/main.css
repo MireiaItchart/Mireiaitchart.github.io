@@ -3167,7 +3167,7 @@ h2 + .row { margin-top: 3rem; }
 }
 
 .ficha-proyecto li{
-  margin-bottom: 1.2rem;   /* más aire vertical */
+  margin-bottom: 1.6rem;   /* más aire vertical */
   line-height: 1.6;        /* lectura más elegante */
 }
 
