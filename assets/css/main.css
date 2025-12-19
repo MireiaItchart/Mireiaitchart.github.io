@@ -3263,29 +3263,29 @@ header.major h3::after{
     line-height: 5.5em;
   }
 }
-/* === HERO: mejorar legibilidad del texto sobre la foto === */
+/* === HERO: texto azul oscuro con buena legibilidad === */
 body.homepage #header {
-  position: relative; /* por si acaso */
+  position: relative;
 }
 
+/* Overlay claro (menos oscuro que antes) */
 body.homepage #header::after {
   content: '';
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.40); /* súbelo/bájalo: 0.30–0.55 */
+  background: rgba(255, 255, 255, 0.35); /* aclara la foto */
   z-index: 0;
 }
 
 body.homepage #header .inner {
   position: relative;
-  z-index: 1; /* el contenido por encima del overlay */
+  z-index: 1;
 }
 
-/* Texto más legible */
+/* Texto en azul oscuro */
 body.homepage #header h1,
 body.homepage #header header > p,
-body.homepage #header #logo,
 body.homepage #header a {
-  color: #fff !important;
-  text-shadow: 0 2px 12px rgba(0,0,0,0.55);
+  color: #1f2a33 !important; /* azul oscuro elegante */
+  text-shadow: 0 1px 6px rgba(255,255,255,0.6);
 }
