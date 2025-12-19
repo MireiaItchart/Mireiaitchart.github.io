@@ -3296,6 +3296,15 @@ body.homepage #header .button.circled {
   border: none;
   box-shadow: 0 10px 30px rgba(0,0,0,0.25);
 }
+/* Forzar texto visible en el botón Start */
+body.homepage #header .button.circled {
+  color: #ffffff !important;
+}
+
+body.homepage #header .button.circled span {
+  color: #ffffff !important;
+}
+
 
 /* Hover elegante */
 body.homepage #header .button.circled:hover {
