@@ -3352,24 +3352,28 @@ a.button {
 
 
 /* Footer: Contacto grande y alineado a la izquierda */
+#footer header.major {
+  margin-bottom: 2em; /* aire entre título/frase y contenido */
+}
 #footer header.major h2 {
   font-size: 2.5em;
-  margin: 0 0 0.35em 0;
+  margin: 0 0 0.5em 0; /* más aire debajo del título */
 }
-
 #footer header.major p {
-  font-size: 1.1em;
-  margin: 0 0 1.25em 0;
+  font-size: 1.25em;  /* frase introductoria más protagonista */
+  line-height: 1.6;
+  margin: 0;
+  opacity: 0.9;
 }
-
 #footer .contact p {
   font-size: 1.05em;
+  margin-top: 1.75em; /* separa datos del header */
 }
-
 #footer .contact p,
 #footer .contact .icons {
   text-align: left;
 }
+
 
 
 
@@ -3385,4 +3389,11 @@ a.button {
 }
 #footer .copyright {
   margin-top: 1.5em;
+}
+
+
+
+/* Aire entre la línea del footer y el bloque de Contacto */
+#footer hr {
+  margin: 2.5em 0 3em 0;
 }
