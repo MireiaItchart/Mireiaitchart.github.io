@@ -3397,3 +3397,10 @@ a.button {
 #footer hr {
   margin: 2.5em 0 3em 0;
 }
+
+
+
+/* Separar Contacto de la línea del footer */
+#footer .contact {
+  margin-top: 2.5em;
+}
