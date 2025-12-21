@@ -3370,3 +3370,19 @@ a.button {
 #footer .contact .icons {
   text-align: left;
 }
+
+
+
+/* Reduce altura del footer */
+#footer {
+  padding: 3em 0 2em 0;
+}
+#footer hr {
+  margin: 1.5em 0;
+}
+#footer .contact {
+  margin-bottom: 2em;
+}
+#footer .copyright {
+  margin-top: 1.5em;
+}
