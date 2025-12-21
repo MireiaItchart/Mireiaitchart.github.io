@@ -3348,12 +3348,25 @@ a.button {
   font-weight: 400;        /* un poco más elegante */
   border-radius: 0.5em;    /* mantiene el estilo Helios */
 }
-#footer .major h2 {
-  font-size: 2em;
+
+
+
+/* Footer: Contacto grande y alineado a la izquierda */
+#footer header.major h2 {
+  font-size: 2.5em;
+  margin: 0 0 0.35em 0;
 }
-#footer .major p {
-  font-size: 1.05em;
+
+#footer header.major p {
+  font-size: 1.1em;
+  margin: 0 0 1.25em 0;
 }
+
 #footer .contact p {
   font-size: 1.05em;
+}
+
+#footer .contact p,
+#footer .contact .icons {
+  text-align: left;
 }
