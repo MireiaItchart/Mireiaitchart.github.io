@@ -3348,3 +3348,12 @@ a.button {
   font-weight: 400;        /* un poco más elegante */
   border-radius: 0.5em;    /* mantiene el estilo Helios */
 }
+#footer .major h2 {
+  font-size: 2em;
+}
+#footer .major p {
+  font-size: 1.05em;
+}
+#footer .contact p {
+  font-size: 1.05em;
+}
