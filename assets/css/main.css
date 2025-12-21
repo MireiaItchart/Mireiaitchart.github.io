@@ -3419,7 +3419,13 @@ a.button {
 
 
 
-#footer .icon {
-  font-size: 1.1em;
-  opacity: 0.85;
+/* Iconos de contacto – estilo elegante */
+#footer .contact-info .icon {
+  margin-right: 0.6em;
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 0.95em;
+}
+
+#footer .contact-info {
+  line-height: 2;
 }
