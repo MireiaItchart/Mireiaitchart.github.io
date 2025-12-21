@@ -3416,3 +3416,10 @@ a.button {
 #footer header.major hr {
   width: 60%;
 }
+
+
+
+#footer .icon {
+  font-size: 1.1em;
+  opacity: 0.85;
+}
