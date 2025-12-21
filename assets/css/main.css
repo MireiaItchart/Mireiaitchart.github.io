@@ -3404,3 +3404,15 @@ a.button {
 #footer .contact {
   margin-top: 2.5em;
 }
+
+
+/* Línea dentro del header de Contacto */
+#footer header.major hr {
+  margin: 1.5em 0 2em 0;
+  opacity: 0.4;
+}
+
+
+#footer header.major hr {
+  width: 60%;
+}
