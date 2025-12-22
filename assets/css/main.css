@@ -3429,3 +3429,25 @@ a.button {
 #footer .contact-info {
   line-height: 2;
 }
+
+
+
+/* Quita la línea superior del footer (la que estaba antes del contacto) */
+#footer > .container > hr:first-of-type {
+  display: none;
+}
+
+/* Instagram debajo del contacto, alineado a la izquierda */
+#footer .contact-social {
+  margin: 1.25em 0 0 0;  /* separación respecto a la info */
+  text-align: left;
+}
+
+#footer .contact-social li {
+  display: inline-block;
+  margin: 0;
+}
+
+#footer .contact-social a {
+  display: inline-block;
+}
