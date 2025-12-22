@@ -3453,3 +3453,11 @@ a.button {
 #footer .contact-social a {
   margin: 0;
 }
+
+
+
+#footer .contact-extra {
+  margin: 1em 0 1.5em 0;
+  font-size: 0.95em;
+  opacity: 0.85;
+}
