@@ -3410,10 +3410,6 @@ a.button {
 #footer header.major hr {
   margin: 1.5em 0 2em 0;
   opacity: 0.4;
-}
-
-
-#footer header.major hr {
   width: 60%;
 }
 
@@ -3440,7 +3436,7 @@ a.button {
 /* Instagram debajo del contacto, alineado a la izquierda */
 #footer .contact-social {
   margin: 1.25em 0 0 0;  /* separación respecto a la info */
-  text-align: left;
+  text-align: left !important;
 }
 
 #footer .contact-social li {
@@ -3448,6 +3444,12 @@ a.button {
   margin: 0;
 }
 
-#footer .contact-social a {
+#footer .contact-social li {
   display: inline-block;
+  margin-left: 0;
+}
+
+/* Evita que Helios centre el icono */
+#footer .contact-social a {
+  margin: 0;
 }
