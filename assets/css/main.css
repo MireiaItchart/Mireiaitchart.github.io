@@ -3501,3 +3501,7 @@ a.button {
     grid-template-columns: 1fr;
   }
 }
+.cocina-galeria .image.fit::before,
+.cocina-galeria .image.fit::after {
+  display: none !important;
+}
