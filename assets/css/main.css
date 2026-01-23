@@ -3510,3 +3510,14 @@ a.button {
     grid-template-columns: 1fr;
   }
 }
+/* Reducir imagen destacada SOLO en Cocina Calella */
+body.no-sidebar .cocina-hero {
+  max-width: 900px;     /* controla el ancho */
+  margin: 0 auto 3em;   /* centrada y con aire debajo */
+}
+
+body.no-sidebar .cocina-hero img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;   /* opcional, coherente con galería */
+}
