@@ -3523,15 +3523,16 @@ body.no-sidebar .cocina-hero img{
    HOME · Proyectos (thumbnails) más pequeñas
    ============================== */
 
-#projects.projects-section{
-  text-align: center;
+#projects.projects-section a.image.featured{
+  display: block;          /* vuelve a comportamiento natural */
+  max-width: 900px;        /* tamaño grande pero controlado */
+  margin: 0 0 1.5em 0;     /* alineado al texto izquierdo */
 }
 
-#projects.projects-section a.image.featured{
-  display: inline-block;
-  width: auto;
-  max-width: 520px;        /* controla el tamaño REAL (420–600) */
-  margin: 0 auto 1.5em;
+#projects.projects-section a.image.featured img{
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
 #projects.projects-section a.image.featured img{
