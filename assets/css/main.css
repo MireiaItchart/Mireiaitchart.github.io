@@ -3505,3 +3505,6 @@ a.button {
 .cocina-galeria .image.fit::after {
   display: none !important;
 }
+.cocina-galeria .cocina-grid > * {
+  align-self: start;
+}
