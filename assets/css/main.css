@@ -3523,3 +3523,53 @@ a.button {
   object-fit: cover;  /* recorta elegante para igualar alturas */
   border-radius: 6px; /* opcional */
 }
+
+/* ==============================
+   Galería cocina Calella
+   ============================== */
+
+.cocina-galeria .row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.2em;          /* ← controla TODO el espaciado */
+  margin-bottom: 1.2em;
+}
+
+/* Anulamos márgenes extra de Helios */
+.cocina-galeria .row:last-child {
+  margin-bottom: 0;
+}
+
+.cocina-galeria .col-6,
+.cocina-galeria .col-12-mobile {
+  width: 100%;
+  padding: 0;         /* clave para que no sume espacio vertical */
+}
+
+/* Imágenes */
+.cocina-galeria .image.fit {
+  display: block;
+  height: 100%;
+}
+
+.cocina-galeria .image.fit img {
+  width: 100%;
+  height: 380px;      /* ajusta si quieres */
+  object-fit: cover;
+  display: block;
+  border-radius: 6px; /* opcional */
+}
+
+/* Tablet */
+@media screen and (max-width: 980px) {
+  .cocina-galeria .row {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Móvil */
+@media screen and (max-width: 736px) {
+  .cocina-galeria .row {
+    grid-template-columns: 1fr;
+  }
+}
