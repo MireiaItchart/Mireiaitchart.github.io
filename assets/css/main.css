@@ -3455,16 +3455,55 @@ a.button {
 }
 
 
-
 #footer .contact-extra {
   margin: 1em 0 1.5em 0;
   font-size: 0.95em;
   opacity: 0.85;
 }
 
+
+
+
 /* Galería cocina Calella */
 .cocina-galeria img {
   max-width: 100%;
   height: auto;
   display: block;
+}
+/* ==============================
+   Galería cocina Calella
+   ============================== */
+
+.cocina-galeria .row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5em;
+  margin-bottom: 1.5em;
+}
+
+/* Anulamos el grid de Helios solo aquí */
+.cocina-galeria .col-6,
+.cocina-galeria .col-12-mobile {
+  width: 100%;
+}
+
+/* Imágenes */
+.cocina-galeria img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Tablet */
+@media screen and (max-width: 980px) {
+  .cocina-galeria .row {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Móvil */
+@media screen and (max-width: 736px) {
+  .cocina-galeria .row {
+    grid-template-columns: 1fr;
+  }
 }
