@@ -52,14 +52,4 @@ header.major h3{
   margin-left: 1.4rem; /* clave: mueve el texto a la derecha */
   list-style: none;
 }
-/* HOME: Proyectos - reducir tamaño de imágenes */
-.projects-section .image.featured {
-  max-width: 720px;     /* prueba 600 / 720 / 800 */
-  margin: 0 auto 1.5em; /* centrado + separación */
-}
 
-.projects-section .image.featured img {
-  width: 100%;
-  height: auto;
-  display: block;
-}
