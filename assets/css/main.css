@@ -3464,66 +3464,6 @@ a.button {
 
 
 
-/* Galería cocina Calella */
-.cocina-galeria img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-}
-/* ==============================
-   Galería cocina Calella
-   ============================== */
-
-.cocina-galeria .row {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1.5em;
-  margin-bottom: 1.5em;
-}
-
-/* Anulamos el grid de Helios solo aquí */
-.cocina-galeria .col-6,
-.cocina-galeria .col-12-mobile {
-  width: 100%;
-}
-
-/* Imágenes */
-.cocina-galeria img {
-  width: 100%;
-  height: auto;
-  display: block;
-}
-
-/* Tablet */
-@media screen and (max-width: 980px) {
-  .cocina-galeria .row {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-/* Móvil */
-@media screen and (max-width: 736px) {
-  .cocina-galeria .row {
-    grid-template-columns: 1fr;
-  }
-}
-/* Cocina: alinear y evitar descuadres en la última fila */
-.cocina-galeria .row {
-  align-items: stretch;
-}
-
-.cocina-galeria .image.fit {
-  display: block;
-  height: 100%;
-}
-
-.cocina-galeria .image.fit img {
-  width: 100%;
-  height: 420px;      /* ajusta si quieres más/menos alto */
-  object-fit: cover;  /* recorta elegante para igualar alturas */
-  border-radius: 6px; /* opcional */
-}
-
 /* ==============================
    Galería cocina Calella (GRID ÚNICO)
    ============================== */
@@ -3541,7 +3481,7 @@ a.button {
 .cocina-galeria .image.fit img {
   width: 100%;
   height: 380px;      /* ajusta si quieres */
-  object-fit: cover;
+  object-fit: cover;  /* recorte limpio para retícula perfecta */
   display: block;
   border-radius: 6px; /* opcional */
 }
