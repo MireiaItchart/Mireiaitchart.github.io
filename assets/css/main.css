@@ -3554,3 +3554,34 @@ body.no-sidebar .cocina-hero img{
   object-fit: cover;
   display: block;
 }
+
+
+/* ==============================
+   Proyectos individuales
+   Alinear imagen + título con CONCEPTO
+   ============================== */
+
+/* Contenedor principal del artículo */
+body.no-sidebar article.special {
+  max-width: 1100px;   /* ancho editorial */
+  margin: 0 auto;      /* centrado del bloque completo */
+}
+
+/* Título y subtítulo */
+body.no-sidebar article.special > header {
+  text-align: left;
+}
+
+/* Imagen destacada del proyecto */
+body.no-sidebar .image.featured {
+  max-width: 100%;
+  margin: 2.5em 0;     /* mismo eje izquierdo */
+}
+
+/* Imagen en sí */
+body.no-sidebar .image.featured img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;  /* opcional */
+}
