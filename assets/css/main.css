@@ -3461,3 +3461,10 @@ a.button {
   font-size: 0.95em;
   opacity: 0.85;
 }
+
+/* Galería cocina Calella */
+.cocina-galeria img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
