@@ -3540,3 +3540,17 @@ body.no-sidebar .cocina-hero img{
   height: auto;
   display: block;
 }
+
+
+/* Carousel proyectos: mismo formato de imagen */
+#projects .carousel .image.featured {
+  overflow: hidden;
+  border-radius: 6px;
+}
+
+#projects .carousel .image.featured img {
+  width: 100%;
+  aspect-ratio: 4 / 5;   /* puedes probar 3/4 si las quieres más horizontales */
+  object-fit: cover;
+  display: block;
+}
