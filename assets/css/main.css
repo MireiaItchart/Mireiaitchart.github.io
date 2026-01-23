@@ -3464,7 +3464,7 @@ a.button {
 
 
 /* ==============================
-   Galería cocina Calella (GRID ÚNICO - sin recorte)
+   Galería cocina Calella (GRID ÚNICO - mismo formato)
    ============================== */
 
 .cocina-galeria .cocina-grid {
@@ -3473,19 +3473,28 @@ a.button {
   gap: 1.2em;
 }
 
-/* Importante: quitar el "fit" de Helios que mete cosas raras */
+/* Caja imagen (sin "cosas" de Helios) */
 .cocina-galeria .image.fit {
   display: block;
   margin: 0;
   padding: 0;
+  border-radius: 6px;
+  overflow: hidden; /* clave para recorte + bordes */
 }
 
+/* Todas las imágenes mismo formato */
 .cocina-galeria .image.fit img {
   width: 100%;
-  height: auto;       /* <- clave: NO altura fija */
-  object-fit: initial;/* <- sin recorte */
+  aspect-ratio: 4 / 5;     /* elige formato (4/5, 3/4, 1/1...) */
+  object-fit: cover;       /* recorte limpio */
+  object-position: center; /* encuadre */
   display: block;
-  border-radius: 6px; /* opcional */
+}
+
+/* Evitar pseudo-elementos/efectos de Helios */
+.cocina-galeria .image.fit::before,
+.cocina-galeria .image.fit::after {
+  display: none !important;
 }
 
 /* Tablet */
@@ -3500,11 +3509,4 @@ a.button {
   .cocina-galeria .cocina-grid {
     grid-template-columns: 1fr;
   }
-}
-.cocina-galeria .image.fit::before,
-.cocina-galeria .image.fit::after {
-  display: none !important;
-}
-.cocina-galeria .cocina-grid > * {
-  align-self: start;
 }
