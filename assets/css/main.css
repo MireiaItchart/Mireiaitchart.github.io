@@ -3462,72 +3462,79 @@ a.button {
 }
 
 
-
 /* ==============================
-   Galería cocina Calella (GRID ÚNICO - mismo formato)
+   COCINA CALLELLA · Galería (GRID ÚNICO · mismo formato)
    ============================== */
 
-.cocina-galeria .cocina-grid {
+.cocina-galeria .cocina-grid{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1.2em;
 }
 
-/* Caja imagen (sin "cosas" de Helios) */
-.cocina-galeria .image.fit {
+.cocina-galeria .image.fit{
   display: block;
   margin: 0;
   padding: 0;
   border-radius: 6px;
-  overflow: hidden; /* clave para recorte + bordes */
+  overflow: hidden;
 }
 
-/* Todas las imágenes mismo formato */
-.cocina-galeria .image.fit img {
+.cocina-galeria .image.fit img{
   width: 100%;
-  aspect-ratio: 4 / 5;     /* elige formato (4/5, 3/4, 1/1...) */
-  object-fit: cover;       /* recorte limpio */
-  object-position: center; /* encuadre */
+  aspect-ratio: 4 / 5;     /* cambia aquí si quieres: 3/4 o 1/1 */
+  object-fit: cover;
+  object-position: center;
   display: block;
 }
 
-/* Evitar pseudo-elementos/efectos de Helios */
+/* Evitar pseudo-elementos de Helios */
 .cocina-galeria .image.fit::before,
-.cocina-galeria .image.fit::after {
+.cocina-galeria .image.fit::after{
   display: none !important;
 }
 
-/* Tablet */
-@media screen and (max-width: 980px) {
-  .cocina-galeria .cocina-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
+/* Responsive */
+@media screen and (max-width: 980px){
+  .cocina-galeria .cocina-grid{ grid-template-columns: repeat(2, 1fr); }
+}
+@media screen and (max-width: 736px){
+  .cocina-galeria .cocina-grid{ grid-template-columns: 1fr; }
 }
 
-/* Móvil */
-@media screen and (max-width: 736px) {
-  .cocina-galeria .cocina-grid {
-    grid-template-columns: 1fr;
-  }
-}
-/* Reducir imagen destacada SOLO en Cocina Calella */
-body.no-sidebar .cocina-hero {
-  max-width: 900px;     /* controla el ancho */
-  margin: 0 auto 3em;   /* centrada y con aire debajo */
-}
 
-body.no-sidebar .cocina-hero img {
+/* ==============================
+   COCINA CALLELLA · Imagen destacada (hero) más pequeña
+   ============================== */
+
+body.no-sidebar .cocina-hero{
+  max-width: 900px;
+  margin: 0 auto 3em;
+}
+body.no-sidebar .cocina-hero img{
   width: 100%;
   height: auto;
-  border-radius: 8px;   /* opcional, coherente con galería */
-}
-/* HOME: Proyectos - reducir tamaño de imágenes */
-.projects-section .image.featured {
-  max-width: 720px;     /* prueba 600 / 720 / 800 */
-  margin: 0 auto 1.5em; /* centrado + separación */
+  display: block;
+  border-radius: 8px;
 }
 
-.projects-section .image.featured img {
+
+/* ==============================
+   HOME · Proyectos (thumbnails) más pequeñas
+   ============================== */
+
+#projects.projects-section{
+  text-align: center;
+}
+
+#projects.projects-section a.image.featured{
+  display: inline-block;
+  width: auto;
+  max-width: 520px;        /* controla el tamaño REAL (420–600) */
+  margin: 0 auto 1.5em;
+}
+
+#projects.projects-section a.image.featured img{
   width: 100%;
   height: auto;
   display: block;
