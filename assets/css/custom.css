@@ -53,3 +53,12 @@ header.major h3{
   list-style: none;
 }
 
+
+/* Alinear fotos hotel misma altura */
+.hotel-galeria .image.fit img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+}
