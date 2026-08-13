@@ -3606,3 +3606,44 @@ body.no-sidebar .image.featured img {
     }
 
 }
+
+
+/* ==============================
+   HOME · EL ESTUDIO
+   ============================== */
+
+#estudio {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+#estudio header.major {
+    text-align: left;
+}
+
+#estudio .image.featured {
+    max-width: 900px;
+    margin: 2.5em auto;
+}
+
+#estudio .image.featured img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 6px;
+}
+
+#estudio .estudio-texto {
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+#estudio .estudio-texto p {
+    text-align: left;
+}
+
+#estudio .estudio-firma {
+    margin-top: 2em;
+    font-weight: 400;
+    color: #483949;
+}
