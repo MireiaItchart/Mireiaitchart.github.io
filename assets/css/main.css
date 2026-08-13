@@ -3594,12 +3594,11 @@ body.no-sidebar .image.featured img {
 @media screen and (min-width: 841px) {
 
     #projects .carousel .reel {
-        padding-left: 0;
-        padding-right: 0;
+        padding: 0 1em;
     }
 
     #projects .carousel article {
-        width: 17em;
+        width: 16em;
         margin-right: 0.75em;
         padding-left: 0.5em;
         padding-right: 0.5em;
