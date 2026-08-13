@@ -3617,13 +3617,15 @@ body.no-sidebar .image.featured img {
     margin: 0 auto;
 }
 
-#estudio header.major {
-    text-align: left;
+#estudio > header,
+#estudio > header h2,
+#estudio > header p {
+    text-align: left !important;
 }
 
 #estudio .image.featured {
     max-width: 900px;
-    margin: 2.5em auto;
+    margin: 2.5em 0;
 }
 
 #estudio .image.featured img {
@@ -3635,7 +3637,8 @@ body.no-sidebar .image.featured img {
 
 #estudio .estudio-texto {
     max-width: 850px;
-    margin: 0 auto;
+    margin: 0;
+    text-align: left;
 }
 
 #estudio .estudio-texto p {
@@ -3646,16 +3649,4 @@ body.no-sidebar .image.featured img {
     margin-top: 2em;
     font-weight: 400;
     color: #483949;
-}
-
-
-/* ESTUDIO · Alineación con el resto de secciones */
-
-#estudio header.major {
-    text-align: left !important;
-}
-
-#estudio header.major h2,
-#estudio header.major p {
-    text-align: left !important;
 }
