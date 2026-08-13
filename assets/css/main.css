@@ -3613,17 +3613,13 @@ body.no-sidebar .image.featured img {
    ============================== */
 
 #estudio {
-    max-width: 1100px;
-    margin: 0 auto;
+    width: 100%;
+    max-width: none;
+    margin: 0;
     text-align: left !important;
 }
 
-#estudio > header {
-    text-align: left !important;
-    margin-left: 0 !important;
-    margin-right: 0 !important;
-}
-
+#estudio > header,
 #estudio > header h2,
 #estudio > header p {
     text-align: left !important;
