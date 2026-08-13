@@ -3647,3 +3647,14 @@ body.no-sidebar .image.featured img {
     font-weight: 400;
     color: #483949;
 }
+
+/* ESTUDIO · Alineación con el resto de secciones */
+
+#estudio header.major {
+    text-align: left !important;
+}
+
+#estudio header.major h2,
+#estudio header.major p {
+    text-align: left !important;
+}
