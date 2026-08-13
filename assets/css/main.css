@@ -3682,17 +3682,29 @@ body.no-sidebar .image.featured img {
 
 
 
-/* HOME · Reducir espacio entre Proyectos y Estudio */
+/* ==============================
+   HOME · Separación Proyectos / Estudio
+   ============================== */
+
+/* Quitar aire sobrante debajo de las tarjetas */
 #projects {
     margin-bottom: 0 !important;
     padding-bottom: 0 !important;
 }
 
 #projects .carousel {
-    margin-bottom: 1.5em !important;
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
 }
 
+#projects .carousel article {
+    padding-bottom: 1em;
+}
+
+/* Separador entre Proyectos y Estudio */
 #projects + hr {
-    margin-top: 1.5em !important;
-    margin-bottom: 4em;
+    position: relative;
+    top: 0 !important;
+    margin-top: 2.5em !important;
+    margin-bottom: 4em !important;
 }
