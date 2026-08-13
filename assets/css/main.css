@@ -3587,3 +3587,10 @@ body.no-sidebar .image.featured img {
   display: block;
   border-radius: 8px;  /* opcional */
 }
+
+
+
+.carousel article {
+    margin-top: 0 !important;
+    vertical-align: top;
+}
