@@ -3678,3 +3678,21 @@ body.no-sidebar .image.featured img {
     }
 
 }
+
+
+
+
+/* HOME · Reducir espacio entre Proyectos y Estudio */
+#projects {
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
+}
+
+#projects .carousel {
+    margin-bottom: 1.5em !important;
+}
+
+#projects + hr {
+    margin-top: 1.5em !important;
+    margin-bottom: 4em;
+}
