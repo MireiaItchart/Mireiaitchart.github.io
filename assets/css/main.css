@@ -3615,12 +3615,20 @@ body.no-sidebar .image.featured img {
 #estudio {
     max-width: 1100px;
     margin: 0 auto;
+    text-align: left !important;
 }
 
-#estudio > header,
+#estudio > header {
+    text-align: left !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+
 #estudio > header h2,
 #estudio > header p {
     text-align: left !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
 }
 
 #estudio .image.featured {
@@ -3638,15 +3646,16 @@ body.no-sidebar .image.featured img {
 #estudio .estudio-texto {
     max-width: 850px;
     margin: 0;
-    text-align: left;
+    text-align: left !important;
 }
 
 #estudio .estudio-texto p {
-    text-align: left;
+    text-align: left !important;
 }
 
 #estudio .estudio-firma {
     margin-top: 2em;
     font-weight: 400;
     color: #483949;
+    text-align: left !important;
 }
