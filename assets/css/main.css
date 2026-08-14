@@ -3774,3 +3774,6 @@ body.no-sidebar .image.featured img {
 	}
 
 }
+.antes-proyecto .row > div {
+	margin-bottom: 2em;
+}
