@@ -3708,3 +3708,21 @@ body.no-sidebar .image.featured img {
     margin-top: 2.5em !important;
     margin-bottom: 4em !important;
 }
+
+
+
+
+
+
+/* HOME · Alinear textos con las imágenes de proyectos */
+
+#projects .carousel article header,
+#projects .carousel article p {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    text-align: center;
+}
+#projects .carousel article {
+    box-sizing: border-box;
+}
