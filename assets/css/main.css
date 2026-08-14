@@ -3733,3 +3733,44 @@ body.no-sidebar .image.featured img {
 #projects .carousel article > p {
     transform: translateX(-6px);
 }
+
+
+
+
+
+/* =========================================
+   PROYECTOS · ANTES DE LA INTERVENCIÓN
+   ========================================= */
+
+.antes-proyecto {
+	margin-top: 3em;
+}
+
+.antes-proyecto header {
+	margin-bottom: 2em;
+}
+
+.antes-proyecto .image.fit {
+	margin-bottom: 0;
+	overflow: hidden;
+}
+
+.antes-proyecto .image.fit img {
+	width: 100%;
+	height: 380px;
+	object-fit: cover;
+	display: block;
+}
+
+/* Móvil */
+@media screen and (max-width: 736px) {
+
+	.antes-proyecto .image.fit {
+		margin-bottom: 1.5em;
+	}
+
+	.antes-proyecto .image.fit img {
+		height: 280px;
+	}
+
+}
