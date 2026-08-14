@@ -3736,8 +3736,6 @@ body.no-sidebar .image.featured img {
 
 
 
-
-
 /* =========================================
    PROYECTOS · ANTES DE LA INTERVENCIÓN
    ========================================= */
@@ -3756,10 +3754,14 @@ body.no-sidebar .image.featured img {
 }
 
 .antes-proyecto .image.fit img {
-    width: 100%;
-    aspect-ratio: 4 / 3;
-    object-fit: cover;
-    display: block;
+	width: 100%;
+	height: 280px;
+	object-fit: cover;
+	display: block;
+}
+
+.antes-proyecto .row > div {
+	margin-bottom: 2em;
 }
 
 /* Móvil */
@@ -3770,23 +3772,7 @@ body.no-sidebar .image.featured img {
 	}
 
 	.antes-proyecto .image.fit img {
-		height: 280px;
+		height: 240px;
 	}
 
-}
-.antes-proyecto .row > div {
-	margin-bottom: 2em;
-}
-
-
-/* Galería de imágenes anteriores a la intervención */
-
-.antes-grid {
-	max-width: 820px;
-	margin-left: auto;
-	margin-right: auto;
-}
-
-.antes-grid .image {
-	margin-bottom: 1.5em;
 }
