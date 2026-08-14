@@ -3723,6 +3723,13 @@ body.no-sidebar .image.featured img {
     margin-right: 0;
     text-align: center;
 }
+
 #projects .carousel article {
     box-sizing: border-box;
+}
+
+/* Ajuste fino: desplazar textos ligeramente a la izquierda */
+#projects .carousel article header,
+#projects .carousel article > p {
+    transform: translateX(-6px);
 }
