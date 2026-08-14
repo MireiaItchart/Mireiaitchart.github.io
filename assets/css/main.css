@@ -3777,3 +3777,11 @@ body.no-sidebar .image.featured img {
 .antes-proyecto .row > div {
 	margin-bottom: 2em;
 }
+
+
+/* Alinear sección "Antes" con los márgenes visuales de la galería */
+
+.antes-proyecto {
+	padding-left: 5%;
+	padding-right: 5%;
+}
