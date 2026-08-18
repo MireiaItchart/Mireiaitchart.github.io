@@ -95,3 +95,8 @@ header.major h3{
     background: #000 !important;
     border-color: #000 !important;
 }
+#header .inner hr {
+    border: 0 !important;
+    border-top: solid 1px #000 !important;
+    opacity: 1 !important;
+}
