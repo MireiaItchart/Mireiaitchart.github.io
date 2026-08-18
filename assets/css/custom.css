@@ -83,3 +83,8 @@ header.major h3{
 #nav > ul > li > span {
     color: #000 !important;
 }
+
+#header hr {
+    border: 0 !important;
+    border-top: 1px solid #000 !important;
+}
