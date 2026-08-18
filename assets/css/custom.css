@@ -87,4 +87,11 @@ header.major h3{
 #header hr {
     border: 0 !important;
     border-top: 1px solid #000 !important;
+    opacity: 1 !important;
+}
+
+#header hr:before,
+#header hr:after {
+    background: #000 !important;
+    border-color: #000 !important;
 }
