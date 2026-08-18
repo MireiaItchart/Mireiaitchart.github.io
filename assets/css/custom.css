@@ -31,7 +31,7 @@ header.major h2,
 header.major h3{
   background: none !important;
 }
-}
+
 /* Mantener 2 columnas 50/50 sin hacks */
 .fila-concepto-ficha > .col-6{
   padding-right: 0; /* no obligatorio, pero evita “parches” anteriores */
@@ -61,4 +61,18 @@ header.major h3{
     object-fit: cover;
     object-position: center;
     display: block;
+}
+
+
+
+/* MENÚ SUPERIOR EN NEGRE */
+#nav a {
+    color: #000000 !important;
+}
+
+/* LÍNIES DEL MENÚ SUPERIOR EN NEGRE */
+#nav:before,
+#nav:after {
+    background-color: #000000 !important;
+    border-color: #000000 !important;
 }
