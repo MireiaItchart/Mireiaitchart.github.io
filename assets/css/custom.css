@@ -65,14 +65,21 @@ header.major h3{
 
 
 
-/* MENÚ SUPERIOR EN NEGRE */
-#nav a {
-    color: #000000 !important;
+
+
+/* MENÚ SUPERIOR I LÍNIES EN NEGRE */
+#nav > ul {
+    border-left: solid 1px #000 !important;
+    border-right: solid 1px #000 !important;
 }
 
-/* LÍNIES DEL MENÚ SUPERIOR EN NEGRE */
-#nav:before,
-#nav:after {
-    background-color: #000000 !important;
-    border-color: #000000 !important;
+#nav > ul:before,
+#nav > ul:after {
+    border-top: solid 1px #000 !important;
+    border-bottom: solid 1px #000 !important;
+}
+
+#nav > ul > li > a,
+#nav > ul > li > span {
+    color: #000 !important;
 }
