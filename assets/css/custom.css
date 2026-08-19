@@ -116,18 +116,32 @@ header.major h3{
 
 
 
-/* PROYECTOS - SCROLL HORIZONTAL */
+
+
+/* PROYECTOS - DESPLAZAMIENTO HORIZONTAL ARRASTRANDO */
 .projects-scroll {
     width: 100%;
     overflow-x: auto;
     overflow-y: hidden;
-    padding-bottom: 1.2em;
+    cursor: grab;
 
     scroll-behavior: smooth;
+    scroll-snap-type: x proximity;
     -webkit-overflow-scrolling: touch;
 
-    scrollbar-width: thin;
-    scroll-snap-type: x proximity;
+    /* Ocultar barra de desplazamiento */
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.projects-scroll::-webkit-scrollbar {
+    display: none;
+}
+
+.projects-scroll.dragging {
+    cursor: grabbing;
+    scroll-behavior: auto;
+    user-select: none;
 }
 
 .projects-reel {
@@ -137,8 +151,8 @@ header.major h3{
 }
 
 .projects-reel article {
-    flex: 0 0 250px;
-    width: 250px;
+    flex: 0 0 280px;
+    width: 280px;
     margin: 0;
     scroll-snap-align: start;
 }
