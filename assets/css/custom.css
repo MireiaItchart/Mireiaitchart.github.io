@@ -113,3 +113,35 @@ header.major h3{
 .carousel article img {
     display: block;
 }
+
+
+
+/* PROYECTOS - SCROLL HORIZONTAL */
+.projects-scroll {
+    width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding-bottom: 1.2em;
+
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+
+    scrollbar-width: thin;
+}
+
+.projects-reel {
+    display: flex;
+    gap: 2em;
+    width: max-content;
+}
+
+.projects-reel article {
+    flex: 0 0 250px;
+    width: 250px;
+    margin: 0;
+}
+
+.projects-reel .image.featured {
+    width: 100%;
+}
+
