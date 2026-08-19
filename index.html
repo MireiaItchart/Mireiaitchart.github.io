@@ -309,6 +309,55 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+		<script>
+const projectsScroll = document.querySelector('.projects-scroll');
+
+let isDragging = false;
+let startX;
+let scrollLeft;
+let moved = false;
+
+projectsScroll.addEventListener('mousedown', (e) => {
+    isDragging = true;
+    moved = false;
+
+    projectsScroll.classList.add('dragging');
+
+    startX = e.pageX - projectsScroll.offsetLeft;
+    scrollLeft = projectsScroll.scrollLeft;
+});
+
+projectsScroll.addEventListener('mouseleave', () => {
+    isDragging = false;
+    projectsScroll.classList.remove('dragging');
+});
+
+projectsScroll.addEventListener('mouseup', () => {
+    isDragging = false;
+    projectsScroll.classList.remove('dragging');
+});
+
+projectsScroll.addEventListener('mousemove', (e) => {
+    if (!isDragging) return;
+
+    e.preventDefault();
+
+    const x = e.pageX - projectsScroll.offsetLeft;
+    const walk = x - startX;
+
+    if (Math.abs(walk) > 5) {
+        moved = true;
+    }
+
+    projectsScroll.scrollLeft = scrollLeft - walk;
+});
+
+projectsScroll.addEventListener('click', (e) => {
+    if (moved) {
+        e.preventDefault();
+    }
+}, true);
+</script>
 
 	</body>
 
