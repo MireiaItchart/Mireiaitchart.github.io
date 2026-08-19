@@ -313,50 +313,56 @@
 const projectsScroll = document.querySelector('.projects-scroll');
 
 let isDragging = false;
-let startX;
-let scrollLeft;
+let startX = 0;
+let startScrollLeft = 0;
 let moved = false;
 
-projectsScroll.addEventListener('mousedown', (e) => {
-    isDragging = true;
-    moved = false;
+if (projectsScroll) {
 
-    projectsScroll.classList.add('dragging');
+    /* Evita que Chrome intente arrastrar las imágenes como archivos/enlaces */
+    projectsScroll.querySelectorAll('img, a').forEach(element => {
+        element.setAttribute('draggable', 'false');
+    });
 
-    startX = e.pageX - projectsScroll.offsetLeft;
-    scrollLeft = projectsScroll.scrollLeft;
-});
+    projectsScroll.addEventListener('mousedown', (e) => {
+        isDragging = true;
+        moved = false;
 
-projectsScroll.addEventListener('mouseleave', () => {
-    isDragging = false;
-    projectsScroll.classList.remove('dragging');
-});
+        projectsScroll.classList.add('dragging');
 
-projectsScroll.addEventListener('mouseup', () => {
-    isDragging = false;
-    projectsScroll.classList.remove('dragging');
-});
+        startX = e.pageX;
+        startScrollLeft = projectsScroll.scrollLeft;
+    });
 
-projectsScroll.addEventListener('mousemove', (e) => {
-    if (!isDragging) return;
+    window.addEventListener('mousemove', (e) => {
+        if (!isDragging) return;
 
-    e.preventDefault();
+        const distance = e.pageX - startX;
 
-    const x = e.pageX - projectsScroll.offsetLeft;
-    const walk = x - startX;
+        if (Math.abs(distance) > 5) {
+            moved = true;
+            e.preventDefault();
+        }
 
-    if (Math.abs(walk) > 5) {
-        moved = true;
-    }
+        projectsScroll.scrollLeft = startScrollLeft - distance;
+    });
 
-    projectsScroll.scrollLeft = scrollLeft - walk;
-});
+    window.addEventListener('mouseup', () => {
+        if (!isDragging) return;
 
-projectsScroll.addEventListener('click', (e) => {
-    if (moved) {
-        e.preventDefault();
-    }
-}, true);
+        isDragging = false;
+        projectsScroll.classList.remove('dragging');
+    });
+
+    /* Si hemos arrastrado, no abre el proyecto accidentalmente */
+    projectsScroll.addEventListener('click', (e) => {
+        if (moved) {
+            e.preventDefault();
+            e.stopPropagation();
+        }
+    }, true);
+
+}
 </script>
 
 	</body>
