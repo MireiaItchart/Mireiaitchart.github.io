@@ -96,3 +96,20 @@ header.major h3{
 #header hr:after {
     background: #000 !important;
 }
+
+
+
+
+/* CARRUSEL PROYECTOS - RENDIMIENTO */
+.carousel .reel {
+    will-change: transform;
+    backface-visibility: hidden;
+}
+
+.carousel article {
+    backface-visibility: hidden;
+}
+
+.carousel article img {
+    display: block;
+}
