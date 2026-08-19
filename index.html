@@ -319,25 +319,26 @@ let moved = false;
 
 if (projectsScroll) {
 
-    /* Evita que Chrome intente arrastrar las imágenes como archivos/enlaces */
     projectsScroll.querySelectorAll('img, a').forEach(element => {
         element.setAttribute('draggable', 'false');
     });
 
-    projectsScroll.addEventListener('mousedown', (e) => {
+    projectsScroll.addEventListener('pointerdown', (e) => {
         isDragging = true;
         moved = false;
 
         projectsScroll.classList.add('dragging');
 
-        startX = e.pageX;
+        startX = e.clientX;
         startScrollLeft = projectsScroll.scrollLeft;
+
+        projectsScroll.setPointerCapture(e.pointerId);
     });
 
-    window.addEventListener('mousemove', (e) => {
+    projectsScroll.addEventListener('pointermove', (e) => {
         if (!isDragging) return;
 
-        const distance = e.pageX - startX;
+        const distance = e.clientX - startX;
 
         if (Math.abs(distance) > 5) {
             moved = true;
@@ -347,21 +348,26 @@ if (projectsScroll) {
         projectsScroll.scrollLeft = startScrollLeft - distance;
     });
 
-    window.addEventListener('mouseup', () => {
-        if (!isDragging) return;
+    projectsScroll.addEventListener('pointerup', (e) => {
+        isDragging = false;
+        projectsScroll.classList.remove('dragging');
 
+        if (projectsScroll.hasPointerCapture(e.pointerId)) {
+            projectsScroll.releasePointerCapture(e.pointerId);
+        }
+    });
+
+    projectsScroll.addEventListener('pointercancel', () => {
         isDragging = false;
         projectsScroll.classList.remove('dragging');
     });
 
-    /* Si hemos arrastrado, no abre el proyecto accidentalmente */
     projectsScroll.addEventListener('click', (e) => {
         if (moved) {
             e.preventDefault();
             e.stopPropagation();
         }
     }, true);
-
 }
 </script>
 
