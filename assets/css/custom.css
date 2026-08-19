@@ -313,3 +313,23 @@ header.major h3{
         line-height: 1.55;
     }
 }
+
+
+
+}
+/* =========================================================
+/* Permitir arrastre también sobre imágenes y enlaces */
+
+.projects-scroll img,
+.projects-scroll a {
+    -webkit-user-drag: none;
+    user-select: none;
+}
+
+.projects-scroll a {
+    cursor: grab;
+}
+
+.projects-scroll.dragging a {
+    cursor: grabbing;
+}
