@@ -127,6 +127,7 @@ header.major h3{
     -webkit-overflow-scrolling: touch;
 
     scrollbar-width: thin;
+    scroll-snap-type: x proximity;
 }
 
 .projects-reel {
@@ -139,9 +140,9 @@ header.major h3{
     flex: 0 0 250px;
     width: 250px;
     margin: 0;
+    scroll-snap-align: start;
 }
 
 .projects-reel .image.featured {
     width: 100%;
 }
-
