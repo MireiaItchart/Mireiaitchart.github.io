@@ -333,3 +333,23 @@ header.major h3{
 .projects-scroll.dragging a {
     cursor: grabbing;
 }
+
+
+/* Indicación de desplazamiento del carrusel */
+
+.projects-scroll-hint {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 0.6em;
+
+    margin-top: 1em;
+
+    font-size: 0.85em;
+    opacity: 0.6;
+}
+
+.projects-scroll-arrow {
+    font-size: 1.4em;
+    line-height: 1;
+}
